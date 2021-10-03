@@ -12,12 +12,20 @@ function Home() {
     return (
         <>
             <h1>Home page</h1>
+            <hr />
             <Link href="/blog">
                 <a>Blog</a>
             </Link>
+            <hr />
             <Link href="/product">
                 <a>Products</a>
             </Link>
+            <hr />
+
+            <Link href="/posts">
+                <a>Posts</a>
+            </Link>
+            <hr />
 
             <button onClick={handleOrder}>Place order</button>
         </>
