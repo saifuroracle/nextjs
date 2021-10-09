@@ -27,6 +27,11 @@ function Home() {
             </Link>
             <hr />
 
+            <Link href="/news">
+                <a>News</a>
+            </Link>
+            <hr />
+
             <button onClick={handleOrder}>Place order</button>
         </>
     )

@@ -1,0 +1,41 @@
+{
+    "comments": [
+        {
+            "body": "some comment",
+            "id": 1,
+            "postId": 1
+        }
+    ],
+    "posts": [
+        {
+            "id": 1,
+            "author": "John Doe ",
+            "title": "Complete Life "
+        },
+        {
+            "id": 2,
+            "author": "David Wayne",
+            "title": "How to solve puzzle"
+        },
+        {
+            "id": 3,
+            "author": "Bikram shah",
+            "title": "Snow white"
+        }
+    ],
+    "news" : [
+        {
+            "id" : 1,
+            "title" : "Facebook went down for 6 hours",
+            "category" : "International"
+        },
+        {
+            "id" : 2,
+            "title" : "Bangladesh is growing economically",
+            "category" : "Domestic"
+        }
+    ],
+    "profile": {
+        "name": "typicode"
+    }
+}
