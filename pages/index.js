@@ -1,7 +1,7 @@
+import Head from 'next/head' 
 import { useRouter } from 'next/router'
-import Link from 'next/link'
 
-function Home() {
+function Home({ title, description}) {
 
     const router = useRouter()
 
@@ -11,26 +11,10 @@ function Home() {
 
     return (
         <>
-            <h1>Home page</h1>
-            <hr />
-            <Link href="/blog">
-                <a>Blog</a>
-            </Link>
-            <hr />
-            <Link href="/product">
-                <a>Products</a>
-            </Link>
-            <hr />
-
-            <Link href="/posts">
-                <a>Posts</a>
-            </Link>
-            <hr />
-
-            <Link href="/news">
-                <a>News</a>
-            </Link>
-            <hr />
+            <Head>
+                <title>{title}</title>
+                <meta name="description" content={description} />
+            </Head>
 
             <button onClick={handleOrder}>Place order</button>
         </>
@@ -38,3 +22,13 @@ function Home() {
 }
 
 export default Home
+
+export const getServerSideProps = async (ctx) => {
+
+    return {
+        props: {
+            title: 'Home',
+            description: 'This is home description',
+        }
+    }
+}
